@@ -1,0 +1,7 @@
+playwright
+beautifulsoup4
+sqlalchemy
+mysql-connector-python
+lxml
+playwright-stealth==1.0.6
+google-generativeai

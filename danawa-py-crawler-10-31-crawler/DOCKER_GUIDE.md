@@ -140,3 +140,4 @@ docker-compose run --rm crawler python crawler.py
 - **데이터 보존**: `docker-compose down -v`를 실행하면 DB 데이터가 삭제됩니다
 - **로그 확인**: 문제 발생 시 `docker-compose logs` 명령으로 로그를 확인하세요
 
+

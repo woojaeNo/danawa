@@ -76,7 +76,7 @@ public class PartService {
     public Page<PartResponseDto> findByFilters(MultiValueMap<String, String> filters, Pageable pageable) {
         Specification<Part> spec = createSpecification(filters);
         Page<Part> partPage = partRepository.findAll(spec, pageable);
-        
+
         // LAZY 로딩을 위한 초기화 (N+1 방지)
         partPage.getContent().forEach(part -> {
             if (part.getPartSpec() != null) {
